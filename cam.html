@@ -1,0 +1,228 @@
+<link rel="shortcut icon" type="image/x-icon" href="https://th.bing.com/th/id/R.3a6f2798c9da0e50ed4bee6f5b3c1736?rik=nqnPzkFTwNbagw&pid=ImgRaw&r=0">
+ </style>
+</head>
+<body>
+    <header>
+        <h1>PeteFlix Cam Moives:</h1>
+    </header>
+    <main>
+  
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+    background-color: blue;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.movie {
+    display: inline-block;
+    width: 200px;
+    height: 250px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.movie img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.movie-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    font-size: 11px;
+    text-align: center;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      /* Your existing CSS here... */
+    </style>
+    <script>
+        window.onload = function() {
+            var movies = document.getElementsByClassName('movie');
+            for (var i = 0; i < movies.length; i++) {
+                movies[i].addEventListener('click', function() {
+                    alert('Enjoy your tv show!');
+                });
+            }
+        };
+    </script>
+        
+    </style>
+</head>
+<body>
+ </div>
+     <div class="movie" data-url="SonicX2004.html">
+        <img src="https://store.crunchyroll.com/on/demandware.static/-/Sites-crunchyroll-master-catalog/default/dwd1d09a1a/rightstuf/875707032292_anime-sonic-x-complete-series-japanese-sub-blu-ray-primary.jpg" alt="Movie 2">
+        <div class="movie-title">Sonic X 2004 </div>   
+    </div>
+    <div class="movie" data-url="familyguyseason1.html">
+        <img src="https://fontsherlock.com/wp-content/uploads/2021/12/Family-Guy-TV-Series-400x600.jpg" alt="Movie 2">
+        <div class="movie-title">Family Guy Season 1</div>
+    </div>
+    <div class="movie" data-url="SonicForHire.html">
+        <img src="https://artworks.thetvdb.com/banners/posters/259411-1.jpg" alt="Movie 2">
+        <div class="movie-title">Sonic For Hire</div>
+    </div>
+    <div class="movie" data-url="KunclesSeries.html">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Knuckles_poster.jpg/150px-Knuckles_poster.jpg" alt="Movie 2">
+        <div class="movie-title">Kunckles Series</div>
+    </div>
+    <div class="movie" data-url="Spongebob.html">
+        <img src="https://th.bing.com/th/id/OIP.tAKmaRbqQmO_VgeYQ9hv_wHaKg?rs=1&pid=ImgDetMain" alt="Movie 2">
+        <div class="movie-title">SpongeBob SquarePants Season 1-2</div>
+  
+     
+     <!-- Add more movie divs with different URLs and titles -->
+
+    <script>
+        // Set the background image URL
+        var bgImageUrl = 'https://community.adobe.com/legacyfs/online/1062261_screenshot.jpg';
+        document.body.style.backgroundImage = 'url(' + bgImageUrl + ')';
+        document.body.style.backgroundSize = 'cover';
+
+        // Function to open movies in fullscreen mode
+        function openMovie(url) {
+            const iframe = document.createElement('iframe');
+            iframe.src = url;
+            iframe.id = 'movieFrame';
+            iframe.frameBorder = 0;
+            iframe.scrolling = 'no';
+            iframe.style.width = '100vw';
+            iframe.style.height = '100vh';
+            iframe.style.position = 'fixed';
+            iframe.style.top = 0;
+            iframe.style.left = 0;
+            iframe.style.zIndex = 1000;
+
+            document.body.appendChild(iframe);
+            iframe.requestFullscreen();
+        }
+
+        // Event listener for clicking on movie thumbnails
+        const movieThumbnails = document.querySelectorAll('.movie');
+        movieThumbnails.forEach((thumbnail) => {
+            thumbnail.addEventListener('click', () => {
+                const movieUrl = thumbnail.getAttribute('data-url');
+                openMovie(movieUrl);
+            });
+        });
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: black;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: gray;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px; /* Adjust the size as needed */
+        }
+        .button-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .button-list button {
+            background-color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header" onclick="toggleModal()">Our other most used links</div>
+    <div class="modal" id="myModal">
+        <div class="button-list">
+            <button onclick="navigateTo('https://6-12-9-24-9-6-25.netlify.app/')">https://6-12-9-24-9-6.../</button>
+            <button onclick="navigateTo('https://idontcare000.netlify.app/')">https://idontcare000.netlify.app/</button>
+            <button onclick="navigateTo('https://flixify000.netlify.app/')">https://flixify000.netlify.app/</button>
+            <button onclick="navigateTo('https://netlify000.netlify.app/')">https://netlify000.netlify.app/</button>
+            <!-- Add more buttons as needed -->
+        </div>
+    </div>
+    <script>
+        let modalOpen = false;
+
+        function toggleModal() {
+            const modal = document.getElementById('myModal');
+            modal.style.display = modalOpen ? 'none' : 'block';
+            modalOpen = !modalOpen;
+        }
+
+        function navigateTo(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
