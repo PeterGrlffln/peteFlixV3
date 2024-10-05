@@ -58,3 +58,21 @@
             <button onclick="navigateTo('https://dramatic-angel-oookokoko-2d080e66.koyeb.app/')">Proxy 2</button>
             <button onclick="navigateTo('https://grims.pro/')">Proxy 3</button>
             <!-- Add more buttons as needed -->
+               </div>
+    </div>
+    <script>
+        let modalOpen = false;
+
+        function toggleModal() {
+            const modal = document.getElementById('myModal');
+            modal.style.display = modalOpen ? 'none' : 'block';
+            modalOpen = !modalOpen;
+        }
+
+        function navigateTo(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
+
