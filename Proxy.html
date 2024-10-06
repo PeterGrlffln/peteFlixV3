@@ -72,4 +72,128 @@
         function navigateTo(url) {
             window.open(url, '_blank');
         }
+        <script>
+        // Set the background image URL
+        var bgImageUrl = 'https://wallpapercave.com/wp/wp4782093.jpg';
+        document.body.style.backgroundImage = 'url(' + bgImageUrl + ')';
+        document.body.style.backgroundSize = 'cover';
+
+        // Function to open movies in fullscreen mode
+        function openMovie(url) {
+            const iframe = document.createElement('iframe');
+            iframe.src = url;
+            iframe.id = 'movieFrame';
+            iframe.frameBorder = 0;
+            iframe.scrolling = 'no';
+            iframe.style.width = '100vw';
+            iframe.style.height = '100vh';
+            iframe.style.position = 'fixed';
+            iframe.style.top = 0;
+            iframe.style.left = 0;
+            iframe.style.zIndex = 1000;
+
+            document.body.appendChild(iframe);
+            iframe.requestFullscreen();
+        }
+
+        // Event listener for clicking on movie thumbnails
+        const movieThumbnails = document.querySelectorAll('.movie');
+        movieThumbnails.forEach((thumbnail) => {
+            thumbnail.addEventListener('click', () => {
+                const movieUrl = thumbnail.getAttribute('data-url');
+                openMovie(movieUrl);
+            });
+        });
     </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: black;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: gray;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px; /* Adjust the size as needed */
+        }
+        .button-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .button-list button {
+            background-color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header" onclick="toggleModal()">Our other most used links</div>
+    <div class="modal" id="myModal">
+        <div class="button-list">
+            <button onclick="navigateTo('https://6-12-9-24-9-6-25.netlify.app/')">https://6-12-9-24-9-6.../</button>
+            <button onclick="navigateTo('https://idontcare000.netlify.app/')">https://idontcare000.netlify.app/</button>
+            <button onclick="navigateTo('https://flixify000.netlify.app/')">https://flixify000.netlify.app/</button>
+            <button onclick="navigateTo('https://netlify000.netlify.app/')">https://netlify000.netlify.app/</button>
+            <!-- Add more buttons as needed -->
+        </div>
+    </div>
+    <script>
+        let modalOpen = false;
+
+        function toggleModal() {
+            const modal = document.getElementById('myModal');
+            modal.style.display = modalOpen ? 'none' : 'block';
+            modalOpen = !modalOpen;
+        }
+
+        function navigateTo(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
